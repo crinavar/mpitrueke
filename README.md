@@ -13,8 +13,8 @@
 - Nvidia CUDA runtime library
 - Nvidia nvcc compiler
 - [optional] Nvidia nvlm (to query the device).
-- OpenMP (4.0 is preffered)
-- MPI (open-mpi preffered)
+- OpenMP (4.0 is preferred)
+- MPI (open-mpi preferred)
 
 
 
