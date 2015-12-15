@@ -1,8 +1,7 @@
-# trueke: multi-GPU Monte Carlo for the 3D RFIM
+# mpitrueke: a multinode, multi-GPU Implementation of Exchange Monte Carlo for the 3D RFIM
 
 # (1) Hardware requirements:
 - A CUDA capable GPU, we recommend Kepler+
-- 4GB of RAM
 - Multi-core X86_64 CPU
 
 
@@ -14,7 +13,8 @@
 - Nvidia CUDA runtime library
 - Nvidia nvcc compiler
 - [optional] Nvidia nvlm (to query the device).
-- OpenMP 4.0 Implementation
+- OpenMP (4.0 is preffered)
+- MPI (open-mpi preffered)
 
 
 
