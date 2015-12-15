@@ -1,0 +1,288 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADAPT_H	src/adapt.h	7;"	d
+AFACTOR	src/kmetropolis.cuh	26;"	d	file:
+BFACTOR	src/kmetropolis.cuh	27;"	d	file:
+BLOCKSIZE	src/kmetropolis.cuh	20;"	d	file:
+BLOCKSIZE1D	src/kmetropolis.cuh	21;"	d	file:
+BLOCKSIZE1D	src/main.cu	15;"	d	file:
+BLOCK_STEPS	src/kmetropolis.cuh	22;"	d	file:
+BVOLUME	src/kmetropolis.cuh	17;"	d	file:
+BX	src/main.cu	12;"	d	file:
+BY	src/main.cu	13;"	d	file:
+BZ	src/main.cu	14;"	d	file:
+C	src/kmetropolis.cuh	30;"	d	file:
+CORRLEN_POS	src/structs.h	27;"	d
+C_POS	src/structs.h	25;"	d
+E	src/structs.h	/^	double E;$/;"	m	struct:mc_data
+E	src/structs.h	/^	float *exE, *E, **dE, **aexE;$/;"	m	struct:setup
+EPSILON	src/kmetropolis.cuh	23;"	d	file:
+EXCHANGE_POS	src/structs.h	28;"	d
+E_POS	src/structs.h	17;"	d
+F	src/structs.h	/^	double F;$/;"	m	struct:mc_data
+F1	src/structs.h	/^	float3 *F1, *F2, **dF1, **dF2;$/;"	m	struct:setup
+F2	src/structs.h	/^	float3 *F1, *F2, **dF1, **dF2;$/;"	m	struct:setup
+F_POS	src/structs.h	23;"	d
+L	src/structs.h	/^	int L, N;$/;"	m	struct:setup
+LCHILD	src/heap.h	12;"	d
+M	src/structs.h	/^	double M;$/;"	m	struct:mc_data
+M	src/structs.h	/^	int *M, **dM;$/;"	m	struct:setup
+MAX_BLOCK_VOLUME	src/kmetropolis.cuh	19;"	d	file:
+MEASURE	src/main.cu	8;"	d	file:
+M_POS	src/structs.h	18;"	d
+N	src/structs.h	/^	int L, N;$/;"	m	struct:setup
+NORM	src/kmetropolis.cuh	25;"	d	file:
+NUM_PHYSICAL_VALUES	src/structs.h	13;"	d
+NUM_SPECIAL	src/structs.h	14;"	d
+PARENT	src/heap.h	14;"	d
+PI	src/kmetropolis.cuh	33;"	d	file:
+QUADM_POS	src/structs.h	21;"	d
+Q_DIST	src/main.cu	16;"	d	file:
+R	src/structs.h	/^    int R, Ra;$/;"	m	struct:setup
+RAN	src/kmetropolis.cuh	28;"	d	file:
+RCHILD	src/heap.h	13;"	d
+Ra	src/structs.h	/^    int R, Ra;$/;"	m	struct:setup
+SEQOFFSET	src/structs.h	32;"	d
+SQE_POS	src/structs.h	19;"	d
+SQM_POS	src/structs.h	20;"	d
+SVOLUME	src/kmetropolis.cuh	16;"	d	file:
+T	src/structs.h	/^	float *T, **aT;$/;"	m	struct:setup
+TR	src/structs.h	/^	float TR, dT, h;$/;"	m	struct:setup
+WARPSIZE	src/main.cu	11;"	d	file:
+X_POS	src/structs.h	26;"	d
+Xd_POS	src/structs.h	22;"	d
+ZSQE_POS	src/structs.h	29;"	d
+ZSQM_POS	src/structs.h	30;"	d
+_CPUTOOLS_H_	src/cputools.h	7;"	d
+_KERNEL_MONTECARLO_CUH_	src/kmetropolis.cuh	8;"	d	file:
+_KERNEL_PRNG_SETUP_	src/kprng.cuh	2;"	d	file:
+_PT_H_	src/pt.h	7;"	d
+_REDUCTION_H_	src/reduction.cuh	2;"	d	file:
+_SETUP_H_	src/setup.h	7;"	d
+_STRUCTS_H_	src/structs.h	7;"	d
+_TOOLS_H_	src/tools.cuh	7;"	d	file:
+aT	src/structs.h	/^	float *T, **aT;$/;"	m	struct:setup
+aavex	src/structs.h	/^	float *ex, *avex, **aex, **aavex;$/;"	m	struct:setup
+accum_block_statistics	src/tools.cuh	/^void accum_block_statistics( setup_t *s, int tid, int a, int b ){$/;"	f
+accum_mcmc_statistics	src/tools.cuh	/^void accum_mcmc_statistics( setup_t *s, int tid, int a, int b){$/;"	f
+accum_realization_statistics	src/tools.cuh	/^void accum_realization_statistics( setup_t *s, int tid, int a, int b, int realizations ){$/;"	f
+adapt	src/adapt.h	/^void adapt( setup_t *s ){$/;"	f
+adapt_exchange	src/adapt.h	/^int adapt_exchange(setup_t *s, int tid, int p){$/;"	f
+adapt_hdist	src/tools.cuh	/^void adapt_hdist(setup_t *s, int tid){$/;"	f
+adapt_init	src/setup.h	/^void adapt_init(setup_t *s, int argc, char **argv){$/;"	f
+adapt_malloc_arrays	src/setup.h	/^void adapt_malloc_arrays( setup_t *s ){$/;"	f
+adapt_metropolis	src/tools.cuh	/^void adapt_metropolis(setup_t *s, int tid, int ms){$/;"	f
+adapt_ptenergies	src/adapt.h	/^void adapt_ptenergies(setup_t *s, int tid){$/;"	f
+adapt_redenergy	src/reduction.cuh	/^void adapt_redenergy(setup_t *s, int tid, int k){$/;"	f
+adapt_reset_gpudata	src/tools.cuh	/^void adapt_reset_gpudata(setup_t *s, int tid){$/;"	f
+adapt_swap	src/adapt.h	/^void adapt_swap(setup_t *s, findex_t a, findex_t b ){$/;"	f
+adapt_threadset	src/tools.cuh	/^void adapt_threadset(setup_t *s, int *tid, int *nt, int *r){$/;"	f
+adjustparams	src/setup.h	/^void adjustparams(setup_t *s){$/;"	f
+adstates	src/structs.h	/^	curandState **dstates, ***adstates;$/;"	m	struct:setup
+aex	src/structs.h	/^	float *ex, *avex, **aex, **aavex;$/;"	m	struct:setup
+aexE	src/structs.h	/^	float *exE, *E, **dE, **aexE;$/;"	m	struct:setup
+ains	src/structs.h	/^	int atrials, ains, apts, ams;$/;"	m	struct:setup
+ams	src/structs.h	/^	int atrials, ains, apts, ams;$/;"	m	struct:setup
+apts	src/structs.h	/^	int atrials, ains, apts, ams;$/;"	m	struct:setup
+arstream	src/structs.h	/^	cudaStream_t *rstream, **arstream;$/;"	m	struct:setup
+arts	src/structs.h	/^	findex_t **arts, **atrs;$/;"	m	struct:setup
+atrials	src/structs.h	/^	int atrials, ains, apts, ams;$/;"	m	struct:setup
+atrs	src/structs.h	/^	findex_t **arts, **atrs;$/;"	m	struct:setup
+avbcorrelation	src/structs.h	/^	double avbcorrelation;$/;"	m	struct:realization_data
+avbstdev	src/structs.h	/^	double avbstdev;$/;"	m	struct:realization_data
+avex	src/structs.h	/^	float *ex, *avex, **aex, **aavex;$/;"	m	struct:setup
+avfragex	src/adapt.h	/^double avfragex( setup_t *s ){$/;"	f
+bdata	src/structs.h	/^	bdata_t 	bdata[NUM_PHYSICAL_VALUES];$/;"	m	struct:obset
+bdata_t	src/structs.h	/^typedef block_data bdata_t;$/;"	t
+block_data	src/structs.h	/^struct block_data{$/;"	s
+block_reduce	src/reduction.cuh	/^__inline__ __device__ float block_reduce(T val){$/;"	f
+block_reduce3	src/reduction.cuh	/^__inline__ __device__ T block_reduce3(T val, int tid){$/;"	f
+blocks	src/structs.h	/^	int blocks, realizations;$/;"	m	struct:setup
+buildMinHeap	src/heap.h	/^void buildMinHeap(minHeap *hp, int *arr, int size) {$/;"	f
+compgpu	src/tools.cuh	/^int compgpu(const void *a, const void *b){$/;"	f
+compute_E	src/cputools.h	/^double compute_E(int *hlat, int *hH, double h,  int width, int height, int length){$/;"	f
+compute_F	src/cputools.h	/^double compute_F(int *hlat, int width, int height, int length){$/;"	f
+coord	src/heap.h	/^    findex_t coord;$/;"	m	struct:node
+correlation	src/structs.h	/^	double correlation;$/;"	m	struct:realization_data
+cs	src/structs.h	/^	int pts, ds, ms, fs, cs, period;$/;"	m	struct:setup
+dE	src/structs.h	/^	float *exE, *E, **dE, **aexE;$/;"	m	struct:setup
+dF1	src/structs.h	/^	float3 *F1, *F2, **dF1, **dF2;$/;"	m	struct:setup
+dF2	src/structs.h	/^	float3 *F1, *F2, **dF1, **dF2;$/;"	m	struct:setup
+dH	src/structs.h	/^	int **hlat, **dlat, *hH, **dH, ***mdlat;$/;"	m	struct:setup
+dM	src/structs.h	/^	int *M, **dM;$/;"	m	struct:setup
+dT	src/structs.h	/^	float TR, dT, h;$/;"	m	struct:setup
+data	src/heap.h	/^    float data ;$/;"	m	struct:node
+deleteMinHeap	src/heap.h	/^void deleteMinHeap(minHeap *hp) {$/;"	f
+deleteNode	src/heap.h	/^void deleteNode(minHeap *hp) {$/;"	f
+dlat	src/structs.h	/^	int **hlat, **dlat, *hH, **dH, ***mdlat;$/;"	m	struct:setup
+ds	src/structs.h	/^	int pts, ds, ms, fs, cs, period;$/;"	m	struct:setup
+dstates	src/structs.h	/^	curandState **dstates, ***adstates;$/;"	m	struct:setup
+elem	src/heap.h	/^    node *elem ;$/;"	m	struct:minHeap
+equilibration	src/tools.cuh	/^void equilibration(setup_t *s, int tid, int a, int b){$/;"	f
+ex	src/structs.h	/^	float *ex, *avex, **aex, **aavex;$/;"	m	struct:setup
+exE	src/structs.h	/^	float *exE, *E, **dE, **aexE;$/;"	m	struct:setup
+exchange	src/pt.h	/^int exchange(setup_t *s, int tid, int a, int b, int p){$/;"	f
+f	src/structs.h	/^	int f;$/;"	m	struct:findex
+fam	src/structs.h	/^	int ngpus, fam;$/;"	m	struct:setup
+fgetleft	src/tools.cuh	/^findex_t fgetleft(setup_t *s, findex_t frag){$/;"	f
+fgetright	src/tools.cuh	/^findex_t fgetright(setup_t *s, findex_t frag){$/;"	f
+fgoleft	src/tools.cuh	/^void fgoleft(setup_t *s, findex_t *frag){$/;"	f
+fgoright	src/tools.cuh	/^void fgoright(setup_t *s, findex_t *frag){$/;"	f
+filenames	src/structs.h	/^const char *filenames[] = {"energy.dat", "magnetization.dat", "sqenergy.dat", "sqmagnetization.dat", "quadmagnetization.dat", "dis_susceptibility.dat", "F.dat", "specific_heat.dat", "susceptibility.dat", "corrlen.dat", "exchange.dat", "zsqe.dat", "zsqm.dat"};$/;"	v
+findex	src/structs.h	/^struct findex{$/;"	s
+findex_t	src/structs.h	/^typedef findex findex_t;$/;"	t
+floatcomp	src/tools.cuh	/^int floatcomp(const void* elem1, const void* elem2){$/;"	f
+freegpus	src/tools.cuh	/^void freegpus(setup_t *s){$/;"	f
+freemem	src/tools.cuh	/^void freemem(setup_t *s){$/;"	f
+fs	src/structs.h	/^	int pts, ds, ms, fs, cs, period;$/;"	m	struct:setup
+fshiftleft	src/tools.cuh	/^void fshiftleft(setup_t *s, findex_t *frag){$/;"	f
+fshiftright	src/tools.cuh	/^void fshiftright(setup_t *s, findex_t *frag){$/;"	f
+getMaxNode	src/heap.h	/^int getMaxNode(minHeap *hp, int i) {$/;"	f
+getgpuid	src/tools.cuh	/^int getgpuid(){$/;"	f
+getparams	src/setup.h	/^void getparams(setup_t *s, int argc, char **argv){$/;"	f
+gpu	src/structs.h	/^struct gpu{$/;"	s
+gpu_t	src/structs.h	/^typedef gpu gpu_t;$/;"	t
+gpur	src/structs.h	/^    int *gpur, *rpool;$/;"	m	struct:setup
+gpus	src/structs.h	/^	gpu_t *gpus;$/;"	m	struct:setup
+gtimer	src/structs.h	/^	StopWatchInterface *gtimer;$/;"	m	struct:setup
+h	src/structs.h	/^	float TR, dT, h;$/;"	m	struct:setup
+hH	src/structs.h	/^	int **hlat, **dlat, *hH, **dH, ***mdlat;$/;"	m	struct:setup
+hdist	src/tools.cuh	/^void hdist(setup_t *s, int tid, int a, int b){$/;"	f
+heapify	src/heap.h	/^void heapify(minHeap *hp, int i) {$/;"	f
+hlat	src/structs.h	/^	int **hlat, **dlat, *hH, **dH, ***mdlat;$/;"	m	struct:setup
+i	src/structs.h	/^	int i;$/;"	m	struct:findex
+i	src/structs.h	/^	int i;$/;"	m	struct:gpu
+init	src/setup.h	/^void init(setup_t *s, int argc, char **argv){$/;"	f
+initMinHeap	src/heap.h	/^minHeap initMinHeap(int size) {$/;"	f
+inorderTraversal	src/heap.h	/^void inorderTraversal(minHeap *hp, int i) {$/;"	f
+insertNode	src/heap.h	/^void insertNode(minHeap *hp, float data, findex_t frag) {$/;"	f
+insert_temps	src/adapt.h	/^void insert_temps(setup_t *s){$/;"	f
+kernel_metropolis	src/kmetropolis.cuh	/^kernel_metropolis(int N, int L, site_t *s, int *H, float h, float B, curandState *dstates, int alt){$/;"	f
+kernel_prng_setup	src/kprng.cuh	/^__global__ void kernel_prng_setup(curandState *state, int N, unsigned long long seed, unsigned long long seq){$/;"	f
+kernel_redcorrlen	src/reduction.cuh	/^__global__ void kernel_redcorrlen(int *s, int L, float3 *F1, float3 *F2){$/;"	f
+kernel_redenergy	src/reduction.cuh	/^__global__ void kernel_redenergy(int *s, int L, T *out, int *H, float h){$/;"	f
+kernel_redmagnetization	src/reduction.cuh	/^__global__ void kernel_redmagnetization(int *s, int L, T *out){$/;"	f
+kernel_reset	src/kmetropolis.cuh	/^__global__ void kernel_reset(T *a, int N, T val){$/;"	f
+kernel_reset_random	src/kmetropolis.cuh	/^__global__ void kernel_reset_random(int *s, int N, curandState *state){$/;"	f
+ktimer	src/structs.h	/^	StopWatchInterface *ktimer;$/;"	m	struct:setup
+lastx	src/structs.h	/^	double lastx;	$/;"	m	struct:block_data
+lastx	src/structs.h	/^	double lastx;	$/;"	m	struct:realization_data
+lblock	src/structs.h	/^	dim3 mcgrid, mcblock, lgrid, lblock, prng_grid, prng_block;$/;"	m	struct:setup
+levelorderTraversal	src/heap.h	/^void levelorderTraversal(minHeap *hp) {$/;"	f
+lgrid	src/structs.h	/^	dim3 mcgrid, mcblock, lgrid, lblock, prng_grid, prng_block;$/;"	m	struct:setup
+m	src/structs.h	/^	int m;$/;"	m	struct:gpu
+main	src/main.cu	/^int main(int argc, char **argv){$/;"	f
+make_output_folders	src/tools.cuh	/^void make_output_folders( const char *obs, const char *plot ){$/;"	f
+make_realization_statistics	src/tools.cuh	/^void make_realization_statistics( setup_t *s ){$/;"	f
+malloc_arrays	src/setup.h	/^void malloc_arrays( setup_t *s ){$/;"	f
+maxfragex	src/adapt.h	/^double maxfragex( setup_t *s ){$/;"	f
+mc_data	src/structs.h	/^struct mc_data{$/;"	s
+mcblock	src/structs.h	/^	dim3 mcgrid, mcblock, lgrid, lblock, prng_grid, prng_block;$/;"	m	struct:setup
+mcdata_t	src/structs.h	/^typedef mc_data mcdata_t;$/;"	t
+mcgrid	src/structs.h	/^	dim3 mcgrid, mcblock, lgrid, lblock, prng_grid, prng_block;$/;"	m	struct:setup
+mdata	src/structs.h	/^	mcdata_t	mdata;$/;"	m	struct:obset
+mdlat	src/structs.h	/^	int **hlat, **dlat, *hH, **dH, ***mdlat;$/;"	m	struct:setup
+mean	src/structs.h	/^	double mean;$/;"	m	struct:block_data
+mean	src/structs.h	/^	double mean;$/;"	m	struct:realization_data
+measure	src/pt.h	/^void measure(setup_t *s, int tid, int a, int b, int p){$/;"	f
+metropolis	src/tools.cuh	/^void metropolis(setup_t *s, int tid, int a, int b, int ms){$/;"	f
+minHeap	src/heap.h	/^typedef struct minHeap {$/;"	s
+minHeap	src/heap.h	/^} minHeap ;$/;"	t	typeref:struct:minHeap
+minfragex	src/adapt.h	/^double minfragex( setup_t *s ){$/;"	f
+ms	src/structs.h	/^	int pts, ds, ms, fs, cs, period;$/;"	m	struct:setup
+mzone	src/structs.h	/^	int mzone;$/;"	m	struct:setup
+n	src/structs.h	/^	int n;$/;"	m	struct:block_data
+n	src/structs.h	/^	int n;$/;"	m	struct:realization_data
+newseed	src/setup.h	/^void newseed(setup_t* s){$/;"	f
+newtemp	src/adapt.h	/^void newtemp(setup_t *s, findex_t l){$/;"	f
+ngpus	src/structs.h	/^	int ngpus, fam;$/;"	m	struct:setup
+node	src/heap.h	/^typedef struct node {$/;"	s
+node	src/heap.h	/^} node ;$/;"	t	typeref:struct:node
+nseed	src/structs.h	/^	unsigned long long seed, nseed;$/;"	m	struct:setup
+nvml_check	src/tools.cuh	/^int nvml_check(nvmlReturn_t r, const char* mesg){$/;"	f
+obset	src/structs.h	/^struct obset{$/;"	s
+obset_t	src/structs.h	/^typedef obset obset_t;$/;"	t
+obsfolder	src/structs.h	/^	const char *obsfolder;$/;"	m	struct:setup
+obstable	src/structs.h	/^	obset_t *obstable;$/;"	m	struct:setup
+one_configuration	src/tools.cuh	/^void one_configuration(int N, int* lat){$/;"	f
+period	src/structs.h	/^	int pts, ds, ms, fs, cs, period;$/;"	m	struct:setup
+physical_results	src/tools.cuh	/^void physical_results(setup_t *s){$/;"	f
+pickgpus	src/setup.h	/^void pickgpus( setup_t *s ){ $/;"	f
+plotfolder	src/structs.h	/^	const char *plotfolder;$/;"	m	struct:setup
+popRoot	src/heap.h	/^node popRoot(minHeap *hp) {$/;"	f
+postorderTraversal	src/heap.h	/^void postorderTraversal(minHeap *hp, int i) {$/;"	f
+preorderTraversal	src/heap.h	/^void preorderTraversal(minHeap *hp, int i) {$/;"	f
+printH	src/tools.cuh	/^void printH(int *h, int N){$/;"	f
+printNode	src/heap.h	/^void printNode(node n){$/;"	f
+print_realization_statistics	src/tools.cuh	/^void print_realization_statistics( setup_t *s ){$/;"	f
+printarray	src/tools.cuh	/^void printarray(T *a, int n, const char *name){$/;"	f
+printarrayfrag	src/tools.cuh	/^void printarrayfrag(T **a, int n, int *m, const char *name){$/;"	f
+printindexarray	src/tools.cuh	/^void printindexarray(T *a, int *ind, int n, const char *name){$/;"	f
+printindexarrayfrag	src/tools.cuh	/^void printindexarrayfrag(T **a, findex** ind, int n, int *m, const char *name){$/;"	f
+printparams	src/setup.h	/^void printparams(setup_t *s){$/;"	f
+prng_block	src/structs.h	/^	dim3 mcgrid, mcblock, lgrid, lblock, prng_grid, prng_block;$/;"	m	struct:setup
+prng_grid	src/structs.h	/^	dim3 mcgrid, mcblock, lgrid, lblock, prng_grid, prng_block;$/;"	m	struct:setup
+pt	src/pt.h	/^void pt(setup_t *s, int tid, int a, int b){$/;"	f
+ptenergies	src/pt.h	/^void ptenergies(setup_t *s, int tid, int a, int b){$/;"	f
+pts	src/structs.h	/^	int pts, ds, ms, fs, cs, period;$/;"	m	struct:setup
+quadM	src/structs.h	/^	double quadM;$/;"	m	struct:mc_data
+randn	src/tools.cuh	/^double randn(){$/;"	f
+random_Hi	src/tools.cuh	/^void random_Hi(int N, int* Hlat){$/;"	f
+random_configuration	src/tools.cuh	/^void random_configuration(int N, int* lat){$/;"	f
+rdata	src/structs.h	/^	rdata_t		rdata[NUM_PHYSICAL_VALUES];$/;"	m	struct:obset
+rdata_t	src/structs.h	/^typedef realization_data rdata_t;$/;"	t
+realization_data	src/structs.h	/^struct realization_data{$/;"	s
+realizations	src/structs.h	/^	int blocks, realizations;$/;"	m	struct:setup
+rebuild_indices	src/adapt.h	/^void rebuild_indices(setup_t *s){$/;"	f
+rebuild_temps	src/adapt.h	/^void rebuild_temps(setup_t *s){$/;"	f
+redcorrlen	src/reduction.cuh	/^void redcorrlen(setup_t *s, int tid, int a, int b, int k){$/;"	f
+redenergy	src/reduction.cuh	/^void redenergy(setup_t *s, int tid, int a, int b, int k){$/;"	f
+redmagnetization	src/reduction.cuh	/^void redmagnetization(setup_t *s, int tid, int a, int b, int k){$/;"	f
+reduceM	src/cputools.h	/^int reduceM(int *hM, int width, int height, int length){$/;"	f
+reset	src/tools.cuh	/^void reset(setup_t *s, int tid, int a, int b){$/;"	f
+reset_array	src/tools.cuh	/^void reset_array(T *a, int n, T val){$/;"	f
+reset_block_statistics	src/tools.cuh	/^void reset_block_statistics( setup_t *s, int tid, int a, int b){$/;"	f
+reset_gpudata	src/tools.cuh	/^void reset_gpudata(setup_t *s, int tid, int a, int b){$/;"	f
+reset_mcmc_statistics	src/tools.cuh	/^void reset_mcmc_statistics( setup_t *s, int tid, int a, int b){$/;"	f
+reset_realization_statistics	src/tools.cuh	/^void reset_realization_statistics( setup_t *s, int R){$/;"	f
+rpool	src/structs.h	/^    int *gpur, *rpool;$/;"	m	struct:setup
+rstream	src/structs.h	/^	cudaStream_t *rstream, **arstream;$/;"	m	struct:setup
+rts	src/structs.h	/^	int *rts, *trs;$/;"	m	struct:setup
+run_sys_call	src/tools.cuh	/^int run_sys_call(char *buffer){$/;"	f
+sC	src/kmetropolis.cuh	31;"	d	file:
+sLx	src/kmetropolis.cuh	12;"	d	file:
+sLy	src/kmetropolis.cuh	13;"	d	file:
+sLz	src/kmetropolis.cuh	14;"	d	file:
+seed	src/structs.h	/^	unsigned long long seed, nseed;$/;"	m	struct:setup
+setup	src/structs.h	/^struct setup{$/;"	s
+setup_t	src/structs.h	/^typedef setup setup_t;$/;"	t
+simulation	src/tools.cuh	/^void simulation(setup_t *s, int tid, int a, int b){$/;"	f
+site_t	src/kmetropolis.cuh	/^typedef int site_t;$/;"	t	file:
+size	src/heap.h	/^    int size ;$/;"	m	struct:minHeap
+sqE	src/structs.h	/^	double sqE;$/;"	m	struct:mc_data
+sqM	src/structs.h	/^	double sqM;$/;"	m	struct:mc_data
+stdev	src/structs.h	/^	double stdev;$/;"	m	struct:realization_data
+swap	src/heap.h	/^void swap(node *n1, node *n2) {$/;"	f
+swap	src/pt.h	/^void swap(setup_t *s, int a, int b ){$/;"	f
+symbols	src/structs.h	/^const char *symbols[] = {"E", "M", "sqE", "sqM", "quadM", "Xd", "F", "C", "X", "CORRLEN", "EXCHANGE", "ZSQE", "ZSQM"};$/;"	v
+threadset	src/tools.cuh	/^void threadset(setup_t *s, int *tid, int *nt, int *r){$/;"	f
+timer	src/structs.h	/^	StopWatchInterface *timer;$/;"	m	struct:setup
+trs	src/structs.h	/^	int *rts, *trs;$/;"	m	struct:setup
+u	src/structs.h	/^	int u;$/;"	m	struct:gpu
+variance_step	src/tools.cuh	/^void variance_step(double x,  int *n, double *mean, double *w1, double *w2, const double x1, double *lastx){$/;"	f
+w1	src/structs.h	/^	double w1;$/;"	m	struct:block_data
+w1	src/structs.h	/^	double w1;$/;"	m	struct:realization_data
+w2	src/structs.h	/^	double w2;$/;"	m	struct:block_data
+w2	src/structs.h	/^	double w2;$/;"	m	struct:realization_data
+warp_reduce	src/reduction.cuh	/^__inline__ __device__ float warp_reduce(T val){$/;"	f
+warp_reduce3	src/reduction.cuh	/^__inline__ __device__ float3 warp_reduce3(T val){$/;"	f
+write_binder	src/tools.cuh	/^void write_binder( setup_t *s ){$/;"	f
+write_realization_statistics	src/tools.cuh	/^void write_realization_statistics( setup_t* s){$/;"	f
+write_specific_heat	src/tools.cuh	/^void write_specific_heat( setup_t *s ){$/;"	f
+write_susceptibility	src/tools.cuh	/^void write_susceptibility( setup_t *s ){$/;"	f
+x1	src/structs.h	/^	double x1;$/;"	m	struct:block_data
+x1	src/structs.h	/^	double x1;$/;"	m	struct:realization_data
