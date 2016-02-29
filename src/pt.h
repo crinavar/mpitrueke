@@ -34,9 +34,6 @@ void swap(setup_t *s, int a, int b );
 
 /* pt(): parallel tempering main loop */
 void pt(setup_t *s, int tid, int a, int b){
-        int rank;
-        MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-
 		/* reset ex counters */
 		reset_array<float>((float*)(s->ex + tid*(b-a)), b-a, 0.0f);
 		/* reset average ex counters */
@@ -44,8 +41,8 @@ void pt(setup_t *s, int tid, int a, int b){
 		/* average exchanges */
 		double avex = 0.0;
 		/* progress printing */
-		if( tid == 0 && rank == 0){
-			printf("rank%i: ptsteps.............0%%", rank); fflush(stdout);
+		if( tid == 0 ){
+			printf("ptsteps.............0%%"); fflush(stdout);
 			sdkResetTimer(&(s->timer));  sdkStartTimer(&(s->timer));
 		}
 		/* parallel tempering */
@@ -66,8 +63,8 @@ void pt(setup_t *s, int tid, int a, int b){
 			/* exchange phase */
 			avex += (double)exchange(s, tid, a, b, p)/(double)s->pts;
 			/* progress printing */
-			if(tid == 0 && rank == 0){
-				printf("\rrank%i: ptsteps............%i%%", rank, (100*(p+1))/s->pts); fflush(stdout);
+			if(tid == 0){
+				printf("\rptsteps............%i%%", (100*(p+1))/s->pts); fflush(stdout);
 				//printf("\navex = %f\n", avex);
 			}
 		}
@@ -77,7 +74,7 @@ void pt(setup_t *s, int tid, int a, int b){
 			s->avex[i] = 2.0 * s->ex[i] / (double)s->pts;
 		}
 		/* progress printing */
-		if( tid  == 0 && rank == 0){
+		if( tid  == 0 ){
 			sdkStopTimer(&(s->timer));
 			printf(" %.3fs ", sdkGetTimerValue(&(s->timer))/1000.0f);
 			printf("\t[<ex> = %.3f]\n\n", avex / ((double)(s->R-1)/2.0));

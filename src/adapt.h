@@ -39,21 +39,17 @@ void rebuild_indices(setup_t *s);
 
 /* adapt(): adapt temperatures */
 void adapt( setup_t *s ){
-    int rank;
-    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     /* file for trial data */
     FILE *fw = fopen(string(string(s->obsfolder) + string( + "/trials.dat")).c_str(), "w");
     fprintf(fw, "trial  av  min max\n");
 	/* print the beginning temp */
-	if(rank == 0){
-        printarrayfrag<float>(s->aT, s->ngpus, s->gpur, "Initial temp set:\naT");
-	    printf("\n\n");
-    }
+	printarrayfrag<float>(s->aT, s->ngpus, s->gpur, "Initial temp set:\naT");
+	printf("\n\n");
 	/* each adaptation iteration improves the temperature distribution */
 	for(int j = 0; j < s->atrials; ++j){
 		int tid, nt, r;
 		/* progress printing */
-		if(rank == 0){printf("[trial %i of %i]\n", j+1, s->atrials); fflush(stdout);}
+		printf("[trial %i of %i]\n", j+1, s->atrials); fflush(stdout);
 		/* reset timers */
 		sdkResetTimer(&(s->timer));  sdkStartTimer(&(s->timer));
 		/* average exchanges */
@@ -80,7 +76,7 @@ void adapt( setup_t *s ){
 				/* exchange phase */
 				avex += (double)adapt_exchange(s, tid, p)/(double)s->apts;
                 /* print status */
-				if(tid == 0 && rank == 0){
+				if(tid == 0){
 					printf("\rpt........%i%%", 100 * (p + 1)/(s->apts)); fflush(stdout);
 				}
 			}
@@ -89,14 +85,12 @@ void adapt( setup_t *s ){
         double avex = avfragex(s) / (double)(s->R-1);
         double min = minfragex(s);
         double max = maxfragex(s);
-        if(rank == 0){
-            printf(" %.3fs ", sdkGetTimerValue(&(s->timer))/1000.0f);
-            printf(" [<ex> = %.3f <min> = %.3f <max> = %.3f]\n\n", avex, min, max);
-            fprintf(fw, "%i %f  %f  %f\n", j, avex, min, max); fflush(fw);
-            //printarrayfrag<float>(s->aT, s->ngpus, s->gpur, "aT");
-            printarrayfrag<float>(s->aex, s->ngpus, s->gpur, "aex");
-            printarrayfrag<float>(s->aavex, s->ngpus, s->gpur, "aavex");
-        }
+        printf(" %.3fs ", sdkGetTimerValue(&(s->timer))/1000.0f);
+        printf(" [<ex> = %.3f <min> = %.3f <max> = %.3f]\n\n", avex, min, max);
+        fprintf(fw, "%i %f  %f  %f\n", j, avex, min, max); fflush(fw);
+        //printarrayfrag<float>(s->aT, s->ngpus, s->gpur, "aT");
+        printarrayfrag<float>(s->aex, s->ngpus, s->gpur, "aex");
+        printarrayfrag<float>(s->aavex, s->ngpus, s->gpur, "aavex");
         //printindexarrayfrag<float>(s->aexE, s->arts, s->ngpus, s->gpur, "aexE");
 		//printf("\n");
         /* place new temperatures at the lowest the exchange rates */

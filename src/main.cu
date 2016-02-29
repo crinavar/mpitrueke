@@ -65,6 +65,7 @@
     } while(0)
 
 /* local includes */
+#include "cpcg.cuh"
 #include "structs.h"
 #include "heap.h"
 #include "kmetropolis.cuh"
